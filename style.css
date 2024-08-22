@@ -1,6 +1,7 @@
 :root {
     --text-color: white;
-    --color: rgb(249, 117, 139);
+    --color: rgb(214, 157, 252);
+
     font-family: "Quicksand", sans-serif;;
 }
 body {
@@ -24,6 +25,7 @@ body {
     position: relative;
     /* background-color: blue; */
 }
+
 #sign-up {
     margin: 10px;
     height: 100%;
@@ -45,7 +47,7 @@ body {
 }
 #title {
     margin: 0;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(15%);
 }
@@ -85,12 +87,13 @@ body {
 #logo {
     width: 100px;
     height: auto;
-    margin: 0;
-    /* justify-content: center;
-    align-content: center; */
+    
+    justify-content: center;
+    align-content: center;
     display: block;
-    position: relative;
+    position: absolute;
     object-fit: contain;
+   
 }
 
 .logo-container {
@@ -98,7 +101,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; /* This allows the container to take up available space */
+    position: absolute; 
+    left: 43%;
+    /* This allows the container to take up available space */
     max-width: 85%;
 }
 
@@ -111,7 +116,7 @@ body {
     /* background-color: red; */
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 45%;
     /* top: 20px; This bad because every monitor has different amounts of pixels so percentage is superior
     left: 965px; */ 
   
@@ -147,7 +152,7 @@ body {
     padding-right: 50px;
     padding-left: 50px;
     border-radius: 30px;
-    background-color: palevioletred;
+    background-color: var(--color);
     color: var(--text-color);
     text-decoration: none; /*this removes the underline that is defaulted with the anchor a */
 
@@ -170,15 +175,17 @@ body {
     display: grid;
     /* grid-template-columns: repeat(4,300px); */
     grid-template-columns: repeat(auto-fit, minmax(400px,400px));
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
     /* padding-left: 40px;
     padding-right: 50px; */
-    padding: 40px 20px 50px 40px;
+    padding: 80px 20px 100px 80px;
     /* grid-template-rows: 150px 200px; */
-    gap: 10px;
+    gap: 20px;
     place-items: center;
     align-items: center;
     justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);                                    /* able to scale opacity, and scaling the size of the image */
     /* background-color: black; */
 }
 
@@ -204,10 +211,17 @@ body {
     align-items: center;
     font-size: 16px;
     color: var(--color);
+    
 
 }
 .image-grid img:hover {
-    border-radius: 0;
+    transform: scale(1.1);
+    /* border-radius: 0; */
+    
+    
+    /* width: 280px;
+    height: 280px; */
+    /* transition-delay: 5; */
     /* content: url('./pics/blossom.jpg'); */
 } 
 /* These are all the individiual Photos for slide show presentations -------------------------------------------------------------------------------------------------------------------------------- */
@@ -230,7 +244,7 @@ body {
                                                 }
 /* These are all the individiual Photos for slide show presentations---------------------------------------------------------------------------------------------------------------------------------- */
 .page-numbers, #one, #two, #next{
-    color: white;
+    color: var(--text-color);
     display: flex;
     gap: 5px;
     align-items: center;
@@ -249,7 +263,7 @@ body {
 #next:hover, #one:hover, #two:hover, #next:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: white;
+    color: var(--text-color);
     /* background-color: black; */
     /* background-color: transparent; */
     
@@ -265,7 +279,7 @@ body {
 }
 #next:active, #one:active, #two:active{
     background-color: rgb(248, 194, 194);
-    color: white;
+    color: var(--text-color)
    
 }
 #bio {
@@ -301,7 +315,7 @@ body {
 }
 .footer {
     
-    color: white;
+    color: var(--text-color);
    
     display: flex;
     /* margin-right: 50px; */
@@ -319,7 +333,7 @@ body {
     padding: 0;
     padding-top: 5px;
     margin: 0;
-    color: white;
+    color: var(--text-color);
     padding-bottom: 8px;
     margin: 0;
     display: flex;
