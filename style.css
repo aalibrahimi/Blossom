@@ -114,15 +114,11 @@ body {
     left: 50%;
     /* top: 20px; This bad because every monitor has different amounts of pixels so percentage is superior
     left: 965px; */ 
-    transform: translate(-50%, -50%);
+  
     color: var(--text-color);
-    text-shadow: 
-    -1px -1px 0 #fc7b7b,  
-     1px -1px 0 #fc7b7b,
-    -1px  1px 0 #fc7b7b,
-     1px  1px 0 #fc7b7b;
+  
     text-align: center;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+   
     display: flex;
     /* flex-direction: row-reverse; */
     flex-direction: column;
@@ -150,8 +146,6 @@ body {
     height: 40px;
     padding-right: 50px;
     padding-left: 50px;
-    /* padding-top: 2px;
-    padding-bottom: 2px; */
     border-radius: 30px;
     background-color: palevioletred;
     color: var(--text-color);
@@ -214,21 +208,127 @@ body {
 }
 .image-grid img:hover {
     border-radius: 0;
+    /* content: url('./pics/blossom.jpg'); */
+} 
+/* These are all the individiual Photos for slide show presentations -------------------------------------------------------------------------------------------------------------------------------- */
+
+                                                img[src='./pics/blossom.jpg']:hover {  /* blossom => anime girl*/
+
+                                                    content: url('./pics/animegirl.jpg');
+                                                }
+                                                img[src='./pics/animegirl.jpg']:hover {     /* animegirl => long*/
+                                                    content: url('./pics/long.jpg');
+                                                }
+                                                img[src='./pics/bunny.jpg']:hover{ 
+                                                    content: url('./pics/stretch.jpg')       /* bunny => stretch*/
+                                                }
+                                                img[src='./pics/stretch.jpg']:hover {
+                                                    content: url('./pics/bunny.jpg');       /* stretch => bunny*/
+                                                }
+                                                img[src='./pics/long.jpg']:hover{
+                                                    content: url('./pics/stretch.jpg');     /* long => stretch*/
+                                                }
+/* These are all the individiual Photos for slide show presentations---------------------------------------------------------------------------------------------------------------------------------- */
+.page-numbers, #one, #two, #next{
+    color: white;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#one, #two, #next {
+    margin: 0;
+    padding: 10px 15px 10px 15px;        /*top, right, bottom, left */
+    color: black;
+    height: 3px;
+    
 }
 
-.footer {
-    color: black;
+
+#next:hover, #one:hover, #two:hover, #next:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    /* background-color: black; */
+    /* background-color: transparent; */
+    
+
+}
+#next:hover, #one:hover, #two:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    background-color: var(--color)
+    /* background-color: transparent; */
+    
+}
+#next:active, #one:active, #two:active{
+    background-color: rgb(248, 194, 194);
+    color: white;
+   
+}
+#bio {
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding-left: 10px;
+
+    padding-right: 10px;
+    margin-left: 50px;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    /* flex: 1; */
+    /* gap: 100px; */
+    /* justify-content: flex-start; */
+
+}
+#bio-logo {
+    width: 200px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-left: 355px;
+    align-items: center;
+    justify-content: space-between;
+    /* display: inline; */
+    position: absolute;
+    object-fit: contain;
+}
+.footer {
+    
+    color: white;
+   
+    display: flex;
+    /* margin-right: 50px; */
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--color);
-    text-shadow: 
-    -1px -1px 0 #fdfdfd,  
-     1px -1px 0 #fdfdfd,
-    -1px  1px 0 #fdfdfd,
-     1px  1px 0 #fdfdfd;
+    padding: 150px 40px 60px 80px;
+   
 }
 
+
+#copy-rights {
+    /* color: blue; */
+    background-color: black;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    color: white;
+    padding-bottom: 8px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    /* position: absolute; */
+}
 /* 
  Media query for smaller screens 
 @media (max-width: 768px) {
