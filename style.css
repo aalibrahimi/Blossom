@@ -1,0 +1,242 @@
+:root {
+    --text-color: white;
+    --color: rgb(249, 117, 139);
+    font-family: "Quicksand", sans-serif;;
+}
+body {
+    margin: 0;
+    /* width: 100%; */
+    padding: 0;
+    /* background-color: black; */
+    min-height: 100vh  /* Ensure the body takes up at least the full viewport height */
+}
+
+.header {
+    /* margin: 0;
+    padding: 0; */
+    padding: 10px 5%;
+    /* font-family: Arial, sans-serif; */
+    color: var(--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    /* background-color: blue; */
+}
+#sign-up {
+    margin: 10px;
+    height: 100%;
+    
+    
+}
+#discord {
+    margin: 10px;
+    height: 100%;
+    
+    
+
+}
+#sign-up:hover,
+#discord:hover, #click-here:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+#title {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(15%);
+}
+
+#search-icon {
+    margin-left: auto;
+    
+}
+
+#shopping-cart {
+    height: 20.75px;
+    /* left: 100%; */
+    /* top: 10%; */
+    /* float: right; */
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    filter: brightness(70%) saturate(100%) invert(60%) sepia(100%) saturate(456%) hue-rotate(297deg) brightness(90%) contrast(97%);
+    padding-left: 15px;
+    align-items: right;
+    justify-content: right;
+}
+
+#search-icon:hover, #shopping-cart:hover {
+    cursor: pointer;
+}
+.AnimeBckgText {
+    
+    position: relative;
+    width: 100%; /* Ensure it takes up the full width */
+   
+    margin: 0 auto; /* Center the container */
+    background-color: var(--color);
+
+    
+}
+#logo {
+    width: 100px;
+    height: auto;
+    margin: 0;
+    /* justify-content: center;
+    align-content: center; */
+    display: block;
+    position: relative;
+    object-fit: contain;
+}
+
+.logo-container {
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* This allows the container to take up available space */
+    max-width: 85%;
+}
+
+#animeGirls {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+}
+
+.overlay-text {
+    /* background-color: red; */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /* top: 20px; This bad because every monitor has different amounts of pixels so percentage is superior
+    left: 965px; */ 
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    text-shadow: 
+    -1px -1px 0 #fc7b7b,  
+     1px -1px 0 #fc7b7b,
+    -1px  1px 0 #fc7b7b,
+     1px  1px 0 #fc7b7b;
+    text-align: center;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-weight: 900;
+}
+
+.overlay-text h1 {
+    
+    margin-bottom: 10px; /* Adds space between the h1 and p */
+    
+}
+
+#click-here {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button {
+    font-size: 18px; /* Adjust size as needed */
+    margin: 0;
+    height: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+    border-radius: 30px;
+    background-color: palevioletred;
+    color: var(--text-color);
+    text-decoration: none; /*this removes the underline that is defaulted with the anchor a */
+
+    
+}
+
+.button:hover {
+    background-color: #f06262; /* Darker shade on hover */
+}
+
+.button:active {
+    /* background-color: rgb(249, 198, 198); */
+    background-color: white;
+    color: black;
+    /* font-style: none; */
+    text-shadow: none;
+}
+.image-grid {
+
+    display: grid;
+    /* grid-template-columns: repeat(4,300px); */
+    grid-template-columns: repeat(auto-fit, minmax(400px,400px));
+    padding-bottom: 200px;
+    /* padding-left: 40px;
+    padding-right: 50px; */
+    padding: 40px 20px 50px 40px;
+    /* grid-template-rows: 150px 200px; */
+    gap: 10px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.image-grid img {
+    width: 250px; /* Set a fixed width ||  The height: 200px combined with object-fit: cover is causing the images to maintain their aspect ratio while filling a 200px height container. */
+    height: 250px;/* Set a fixed height */
+    padding-right: 5px;
+    padding-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    object-fit: cover; /* this is op, it makes the image good quality changes the scene a bit */
+    border-radius: 30px;
+}
+
+.image-grid p {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: var(--color);
+
+}
+.image-grid img:hover {
+    border-radius: 0;
+}
+
+.footer {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    text-shadow: 
+    -1px -1px 0 #fdfdfd,  
+     1px -1px 0 #fdfdfd,
+    -1px  1px 0 #fdfdfd,
+     1px  1px 0 #fdfdfd;
+}
+
+/* 
+ Media query for smaller screens 
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .image-grid img {
+        height: 150px;
+    }
+} */
