@@ -68,7 +68,9 @@ body {
     /* align-items: center;
     justify-content: center; */
     display: flex;
-    filter: brightness(70%) saturate(100%) invert(60%) sepia(100%) saturate(456%) hue-rotate(297deg) brightness(90%) contrast(97%);
+    filter: brightness(90%) saturate(100%) invert(84%) sepia(45%) saturate(630%) hue-rotate(255deg) brightness(105%) contrast(95%);
+
+
     padding-left: 15px;
     align-items: right;
     justify-content: space-between;
@@ -291,52 +293,37 @@ body {
     color: var(--text-color)
    
 }
-#bio {
-    font-size: 18px;
+.footer {
+    
+    color: var(--text-color);
+    /* margin-right: 0px; */
+    padding: 60px 40px;
+    display: flex;
+    /* margin-right: 50px; */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    /* padding: 150px 40px 60px 80px; */
+   
+}
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1200px;
     width: 100%;
-    padding-left: 10px;
-
-    padding-right: 10px;
-    margin-left: 50px;
-    margin: 0;
-    margin-left: 0px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    /* flex: 1; */
-    /* gap: 100px; */
-    /* justify-content: flex-start; */
-
 }
 #bio-logo {
     width: 200px;
     height: auto;
-    margin: 0;
-    margin-bottom: 50px;
-    margin-left: 355px;
-    align-items: center;
-    justify-content: space-between;
-    /* display: inline; */
-    position: absolute;
     object-fit: contain;
-}
-.footer {
-    
-    color: var(--text-color);
-    
     margin-right: 0px;
-   
-    display: flex;
-    /* margin-right: 50px; */
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color);
-    padding: 150px 40px 60px 80px;
-   
 }
-
+#bio {
+    font-size: 18px;
+    margin-right: 50px;
+    flex: 1;
+}
 
 #copy-rights {
     /* color: blue; */

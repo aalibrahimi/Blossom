@@ -9,7 +9,7 @@ function loadHTML(file, elementId) {
 }
 
 // Load header and footer
-loadHTML('header.html', 'header-placeholder');
-loadHTML('footer.html', 'footer-placeholder');
+loadHTML('./template/header.html', 'header-placeholder');
+loadHTML('./template/footer.html', 'footer-placeholder');
 
 
