@@ -9,7 +9,7 @@ body {
     /* margin-right: 55px; */
     /* width: 100%; */
     padding: 0;
-    background-color: brown;
+    /* background-color: brown; */
     min-height: 100vh  /* Ensure the body takes up at least the full viewport height */
 }
 
@@ -179,6 +179,8 @@ body {
     /* font-style: none; */
     text-shadow: none;
 }
+
+
 .image-grid {
 
     display: grid;
@@ -352,4 +354,26 @@ body {
         height: 150px;
     }
 } */
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color);
+    border-radius: 40px;
+    margin-right: 20px;
+    
+    
+    
+}
+/* for firefox */
+/* * {
+    scrollbar-width: thin;
+    scrollbar-color: #8a3280;
+} */
+
 
