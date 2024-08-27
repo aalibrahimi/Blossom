@@ -55,8 +55,49 @@ body {
     left: 50%;
     transform: translateX(15%);
 }
+.Register{
+    display: flex;
+    align-items: right;
+    justify-content: right; 
+    right: 20%;
+    /* color: white; */
+    position: absolute;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 5px 17px 5px 17px;
+    background-color: var(--color);
+    font-size: larger;
+    letter-spacing: 1px;
+    border-color: var(--color);
+    color: black;
+   
+ 
+    
+}
+.Register:hover{
+    background-color: rgb(234, 184, 245);
+
+}
 
 /* Navigation elements */
+:where(#sign-up, #discord, .Register){
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--color);
+    font-weight: bold;
+
+}
+:where(#sign-up, #discord, .Register):hover{
+     /* text-decoration: underline; */
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.1),
+        0 -5px 15px rgba(255, 255, 255, 0.8);
+    background-color: #ffffff;
+
+}
+
 #sign-up, #discord {
     margin: 10px;
     height: 100%;
@@ -70,16 +111,7 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
-#sign-up:hover,
-#discord:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 
-        0 5px 15px rgba(0, 0, 0, 0.1),
-        0 -5px 15px rgba(255, 255, 255, 0.8);
-    background-color: #ffffff;
-}
+
 
 /* Icons */
 #search-icon {
@@ -189,6 +221,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    
 }
 
 .button {
@@ -217,7 +250,7 @@ body {
     text-shadow: none;
 }
 
-/* ----------------------------------------------------------------------------TEXT Wrapper---------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------gif Wrapper---------------------------------------------------------------------------------- */
 
 * {
    margin: 0;

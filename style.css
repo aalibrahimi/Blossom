@@ -93,6 +93,7 @@ body {
     color: var(--text-color);
     display: flex;
     gap: 5px;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -105,16 +106,6 @@ body {
     
 }
 
-
-#next:hover, #one:hover, #two:hover, #next:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: var(--text-color);
-    /* background-color: black; */
-    /* background-color: transparent; */
-    
-
-}
 #next:hover, #one:hover, #two:hover {
     text-decoration: underline;
     cursor: pointer;
