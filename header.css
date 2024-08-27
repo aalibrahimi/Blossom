@@ -1,0 +1,203 @@
+/* Root variables and global styles */
+:root {
+    --text-color: white;
+    --color: rgb(214, 157, 252);
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  /* Ensure the body takes up at least the full viewport height */
+}
+
+/* Header styles */
+.header {
+    padding: 10px 5%;
+    color: var(--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 43%;
+    max-width: 85%;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    position: absolute;
+    object-fit: contain;
+}
+
+#title {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(15%);
+}
+
+/* Navigation elements */
+#sign-up, #discord {
+    margin: 10px;
+    height: 100%;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+#click-here:hover{
+    text-decoration: underline;
+    cursor: p;
+}
+#sign-up:hover,
+#discord:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.1),
+        0 -5px 15px rgba(255, 255, 255, 0.8);
+    background-color: #ffffff;
+}
+
+/* Icons */
+#search-icon {
+    margin-left: auto;
+}
+
+#shopping-cart {
+    height: 22.75px;
+    margin-right: 10px;
+    display: flex;
+    filter: brightness(90%) saturate(100%) invert(84%) sepia(45%) saturate(630%) hue-rotate(255deg) brightness(105%) contrast(95%);
+    padding-left: 15px;
+    align-items: right;
+    justify-content: space-between;
+}
+
+#bunnyPfp {
+    height: 29px;
+    cursor: pointer;
+}
+
+#search-icon:hover, #shopping-cart:hover {
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.drop-down {
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    background-color: white;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown:hover .content {
+    display: block;
+   
+}
+.dropdown a:hover {
+    background-color: var(--color);
+}
+
+/* Ensure dropdown content is properly positioned */
+.dropdown {
+    position: relative;
+    
+}
+
+.AnimeBckgText {
+    
+    position: relative;
+    width: 100%; /* Ensure it takes up the full width */
+   
+    margin: 0 auto; /* Center the container */
+    background-color: var(--color);
+    
+}
+#animeGirls {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+}
+
+.overlay-text {
+    /* background-color: red; */
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    /* top: 20px; This bad because every monitor has different amounts of pixels so percentage is superior
+    left: 965px; */ 
+  
+    color: var(--text-color);
+  
+    text-align: center;
+   
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-weight: 900;
+}
+
+.overlay-text h1 {
+    
+    margin-bottom: 10px; /* Adds space between the h1 and p */
+    
+}
+
+#click-here {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button {
+    font-size: 18px; /* Adjust size as needed */
+    margin: 0;
+    height: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 30px;
+    background-color: var(--color);
+    color: var(--text-color);
+    text-decoration: none; /*this removes the underline that is defaulted with the anchor a */
+
+    
+}
+
+.button:hover {
+    background-color: #f06262; /* Darker shade on hover */
+}
+
+.button:active {
+    /* background-color: rgb(249, 198, 198); */
+    background-color: white;
+    color: black;
+    /* font-style: none; */
+    text-shadow: none;
+}
