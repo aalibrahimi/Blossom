@@ -29,6 +29,20 @@ body {
     position: relative;
 }
 
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-center{
+    display:flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+.header-right{
+    display:flex;
+    align-items: center;
+}
 /* Logo styles */
 .logo-container {
     display: flex;
@@ -59,9 +73,8 @@ body {
     display: flex;
     align-items: right;
     justify-content: right; 
-    right: 20%;
-    /* color: white; */
-    position: absolute;
+    right: -25%;
+    position: relative;
     border-style: solid;
     border-radius: 30px;
     padding: 5px 17px 5px 17px;
