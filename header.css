@@ -12,9 +12,16 @@ body {
     min-height: 100vh;  /* Ensure the body takes up at least the full viewport height */
 }
 
+:where(#sign-up, #discord) {
+    font-size: 17px
+}
+:where(#shopping-cart, #search-icon, #bunnyPfp, #search-icon){
+    margin-right: 11px;
+}
+
 /* Header styles */
 .header {
-    padding: 10px 5%;
+    padding: 12px 1.8%;
     color: var(--color);
     display: flex;
     justify-content: space-between;
@@ -37,6 +44,8 @@ body {
     height: auto;
     display: block;
     position: absolute;
+    margin-right: 11px;
+    margin-bottom: 5px;
     object-fit: contain;
 }
 
@@ -51,12 +60,12 @@ body {
 #sign-up, #discord {
     margin: 10px;
     height: 100%;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     transition: all 0.3s ease;
 }
 #click-here:hover{
     text-decoration: underline;
-    cursor: p;
+    cursor: pointer;
 }
 #sign-up:hover,
 #discord:hover {
@@ -75,7 +84,7 @@ body {
 }
 
 #shopping-cart {
-    height: 22.75px;
+    height: 30px;
     margin-right: 10px;
     display: flex;
     filter: brightness(90%) saturate(100%) invert(84%) sepia(45%) saturate(630%) hue-rotate(255deg) brightness(105%) contrast(95%);
@@ -85,8 +94,9 @@ body {
 }
 
 #bunnyPfp {
-    height: 29px;
+    height: 33px;
     cursor: pointer;
+    margin-right: 0px;
 }
 
 #search-icon:hover, #shopping-cart:hover {
@@ -112,11 +122,13 @@ body {
     box-shadow: 2px 2px 5px black;
     display: none;
     z-index: 1;
-    right: 0;
+    left: -30px;
+    padding-right: 0px;
 }
 
 .dropdown:hover .content {
     display: block;
+ 
    
 }
 .dropdown a:hover {
