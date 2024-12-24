@@ -120,11 +120,13 @@ body {
    
 }
 .footer {
+
     
     color: var(--text-color);
     /* margin-right: 0px; */
     padding: 60px 40px;
     display: flex;
+    position: relative;
     /* margin-right: 50px; */
     align-items: center;
     justify-content: center;
@@ -155,6 +157,7 @@ body {
     /* color: blue; */
     background-color: black;
     padding: 0;
+   
     padding-top: 5px;
     margin: 0;
     color: var(--text-color);
@@ -163,8 +166,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 50px;
-    padding-bottom: 15px;
+    padding-right: 0px;
+    /* padding-bottom: 15px; */
     /* position: absolute; */
 }
 /* 
@@ -202,3 +205,30 @@ body {
 
 
 /*-------------------------------------------------------------------------------------------- Registration Box------------------------------------------------------------------------------- */
+
+.register-box  {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+   
+}
+.fieldset {
+    background-color: rgb(245, 151, 171);
+    height: 390px;
+    width: 330px;   
+    border-radius: 30px;
+}
+
+.register-box  .input-labels {
+    padding-right: 100px;
+    margin-right: 100px;
+}
+#comment-boxy{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    background-color: blue;
+}

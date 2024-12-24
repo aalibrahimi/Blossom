@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registerating</title>
+    <title>Registering</title>
     <link rel="stylesheet" href="style.css">
+<style>
+    body{
+        background-color: rgb(11, 90, 96);
+    }
+</style>
 </head>
 <body>
+
     <div class="register-box">
+        <form action="Register.html" method="POST">
+
+            <fieldset class="fieldset">
+                <legend>Register Details</legend>
+
+                <label class ="form-labels" for="email">Email</label>
+                <input class="input-labels"type="text" name="email"> <br>
+        
+                
+                <label class ="form-labels" for="mobile">Mobile</label>
+                <input class ="input-labels" type="text" name="mobile" > <br>
+               
+             
+                <label class ="form-labels" for="comment-boxy">Comments </label>
+                <textarea class="input-labels" #id ="comment-boxy" name="comments" >Enter your comments...</textarea>
+
+                <button type="button" onclick="window.location.href='login.html'">Register</button>
+                <!-- <button type="button">Register</button> -->
+               
+            </fieldset>
+        </form>    
+            
 
     </div>
+   
+   
 </body>
 </html>
